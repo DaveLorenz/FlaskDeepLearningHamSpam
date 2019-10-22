@@ -35,6 +35,8 @@ def prepData(text):
     Features = tokenizer.texts_to_sequences(textDataArray)
     Features = pad_sequences(Features, 20, padding='post')
     
+    return Features
+    
 loaded_model.compile(optimizer="Adam",loss='binary_crossentropy',metrics=['accuracy'])
 
 # define a predict function as an endpoint 
@@ -57,4 +59,4 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host='127.0.0.1', port=8080)
-
+    
