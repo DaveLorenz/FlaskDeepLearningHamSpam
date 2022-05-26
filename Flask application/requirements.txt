@@ -3,4 +3,4 @@ pandas==0.24.1
 flask==0.12.2
 keras==2.2.4
 gunicorn==19.6.0
-tensorflow==1.13.1
+tensorflow==2.7.2
